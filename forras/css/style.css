@@ -1,0 +1,107 @@
+/* Alapstílusok */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7d7de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+.wrapper{
+    display: flex;
+    width: 950px;
+    box-shadow: 0 0 10px black;
+    padding: 20px
+}
+
+h1 {
+    color: #333;
+}
+p{
+    margin:10px 0
+}
+.form-container{
+width: 500px;
+}
+/* Űrlap stílusok */
+form {
+    margin-bottom: 20px;
+    width: 100%;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+   margin:5px 0;
+}
+
+form button {
+    background-color: #201052;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0d0840;
+}
+
+/* Üzenetek stílusok */
+#messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.message-card {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch
+}
+
+.message-card p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.message-card .author {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.message-card .timestamp {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.message-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+/* Elválasztó vonal stílus */
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
