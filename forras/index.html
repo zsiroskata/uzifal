@@ -6,20 +6,19 @@
     <title>Üzenőfal Kép Beküldéssel</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-    
 </head>
 <body>
     <div class="wrapper">
         <div class="form-container">
-    <h1>Iskolai üzenőfal</h1>
-    <form id="messageForm" enctype="multipart/form-data">
-        <input type="text" name="name" id="name" placeholder="Név" required><br>
-        <textarea id="message" placeholder="Írja be az üzenetet..."></textarea><br>
-        <input type="file" id="image" accept="image/*"><br>
-        <button type="submit">Küldés</button>
-    </form>
-</div class="message-container">
-    <div id="messages"></div>
-</div>
+            <h1>Iskolai üzenőfal</h1>
+            <form id="messageForm" enctype="multipart/form-data" method="post" action="backend/message-process.php">
+                <input type="text" name="name" id="name" placeholder="Név" required><br>
+                <textarea name="message" id="message" placeholder="Írja be az üzenetet..." required></textarea><br>
+                <input type="file" name="image" id="image" accept="image/*"><br>
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+        <div id="messages"></div>
+    </div>
 </body>
 </html>
